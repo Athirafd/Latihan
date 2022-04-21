@@ -31,3 +31,11 @@
       amount integer,
       fee text
   );
+  
+-- CAST
+  -- Fungsi untuk mengubah tipe data dari sebuah column sementara
+  -- SYNTAX
+  SELECT CAST (
+      column_name AS type_data
+  )
+  FROM table_name;
