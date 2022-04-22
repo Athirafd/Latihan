@@ -22,6 +22,11 @@ FROM
 
 ---- SUBSTRING (to extract character from the middle of the string)
   -- SUBSTRING (column, number, number)
+ALTER TABLE table_name
+ALTER COLUMN column_name
+TYPE varchar(x)
+USING SUBSTRING (column_name FROM 1 FOR x)
+
 ---- CHARINDEX (find a character in a string)
   -- CHARINDEX('character', column)
   
